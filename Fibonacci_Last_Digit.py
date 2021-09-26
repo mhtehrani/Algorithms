@@ -19,4 +19,5 @@ def get_fibonacci_last_digit_fast(n):
         return f[n] % 10
 
 n = int(input())
+
 print(get_fibonacci_last_digit_fast(n))
