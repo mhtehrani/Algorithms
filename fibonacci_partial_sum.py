@@ -7,7 +7,6 @@ July 2, 2021
 https://github.com/mhtehrani
 
 """
-# Uses python3
 
 def fibonacci_sum_fast(n):
     period = 60
@@ -35,23 +34,6 @@ def fibonacci_sum_fast(n):
         return int(n/period)*(sum_n(period) % 10) + (sum_n(n-period*int(n/period)) % 10)
 
 
-
-def fibonacci_partial_sum_naive(from_, to):
-    sum = 0
-
-    current = 0
-    next  = 1
-
-    for i in range(to + 1):
-        if i >= from_:
-            sum += current
-
-        current, next = next, current + next
-
-    return sum % 10
-
-
-
 def fibonacci_partial_sum_fast(from_, to):
     if from_ == 0:
         sum_from = 0
@@ -66,5 +48,5 @@ def fibonacci_partial_sum_fast(from_, to):
         return (sum_to + 10) - sum_from
 
 from_, to = map(int, input().split())
-# print(fibonacci_partial_sum_naive(from_, to))
+
 print(fibonacci_partial_sum_fast(from_, to))
