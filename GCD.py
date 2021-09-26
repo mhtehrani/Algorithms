@@ -1,6 +1,6 @@
 """
-Last Digit of a Large Fibonacci Number
-======================================
+Greatest Common Divisor
+=======================
 
 @author: mhtehrani
 July 1, 2021
