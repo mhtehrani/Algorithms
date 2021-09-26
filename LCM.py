@@ -1,6 +1,6 @@
 """
-Last Digit of a Large Fibonacci Number
-======================================
+Least Common Multiple
+=====================
 
 @author: mhtehrani
 July 1, 2021
