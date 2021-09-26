@@ -1,6 +1,6 @@
 """
-Last Digit of a Large Fibonacci Number
-======================================
+Last Digit of the Sum of Fibonacci Numbers
+==========================================
 
 @author: mhtehrani
 July 2, 2021
