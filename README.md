@@ -68,15 +68,22 @@ Output Format: Output the last digit of 𝐹0 + 𝐹1 + · · · + 𝐹𝑛.
 
 
 
+Last Digit of the Sum of Fibonacci Numbers
+==========================================
+Given two non-negative integers 𝑚 and 𝑛, where 𝑚 ≤ 𝑛, find the last digit of the sum 𝐹𝑚 + 𝐹𝑚+1 + · · · + 𝐹𝑛.
+Input Format: The input consists of two non-negative integers 𝑚 and 𝑛 separated by a space.
+Constraints: 0 ≤ 𝑚 ≤ 𝑛 ≤ 1014.
+Output Format: Output the last digit of 𝐹𝑚 + 𝐹𝑚+1 + · · · + 𝐹𝑛.
 
 
 
 
-
-
-
-
-
+Last Digit of the Sum of Squares of Fibonacci Numbers
+=====================================================
+Compute the last digit of 𝐹0^2 + 𝐹1^2 + · · · + 𝐹𝑛^2.
+Input Format: Integer 𝑛.
+Constraints: 0 ≤ 𝑛 ≤ 1014.
+Output Format: The last digit of 𝐹0^2 + 𝐹1^2 + · · · + 𝐹𝑛^2.
 
 
 
