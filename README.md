@@ -2,8 +2,8 @@
 
 
 
-Maximum Pairwise Product Problem
-================================
+Maximum Pairwise Product
+========================
 Find the maximum product of two distinct numbers in a sequence of non-negative integers.
 Input: A sequence of non-negative integers.
 Output: The maximum value that can be obtained by multiplying two different elements from the sequence.
@@ -84,6 +84,32 @@ Compute the last digit of 𝐹0^2 + 𝐹1^2 + · · · + 𝐹𝑛^2.
 Input Format: Integer 𝑛.
 Constraints: 0 ≤ 𝑛 ≤ 1014.
 Output Format: The last digit of 𝐹0^2 + 𝐹1^2 + · · · + 𝐹𝑛^2.
+
+
+
+Money Change
+============
+Finding the minimum number of coins needed to change the input value (an integer) into coins with denominations 1, 5, and 10.
+Input Format: The input consists of a single integer 𝑚.
+Constraints: 1 ≤ 𝑚 ≤ 103.
+Output Format: Output the minimum number of coins with denominations 1, 5, 10 that changes 𝑚.
+
+
+
+Fractional Knapsack
+===================
+Input Format: The first line of the input contains the number 𝑛 of items and the capacity 𝑊 of a knapsack. The next 𝑛 lines define the values and weights of the items. The 𝑖-th line contains integers 𝑣𝑖 and 𝑤𝑖 — the value and the weight of 𝑖-th item, respectively.
+Constraints: 1 ≤ 𝑛 ≤ 103, 0 ≤ 𝑊 ≤ 2 · 106; 0 ≤ 𝑣𝑖 ≤ 2 · 106, 0 < 𝑤𝑖 ≤ 2 · 106 for all 1 ≤ 𝑖 ≤ 𝑛. All the numbers are integers.
+Output Format: Output the maximal value of fractions of items that fit into the knapsack.
+
+
+
+Car Fueling
+===========
+the minimum number of refills needed to travel to another city that is located 𝑑 miles away. Your car can travel at most 𝑚 miles on a full tank and you start with a full tank. Along your way, there are gas stations at distances stop1, stop2, . . . , stop𝑛 from your home city.
+Input Format: The first line contains an integer 𝑑. The second line contains an integer 𝑚. The third line specifies an integer 𝑛. Finally, the last line contains integers stop1, stop2, . . . , stop𝑛.
+Output Format: The minimum number of refills needed. If it is not possible to reach the destination, output −1.
+Constraints: 1 ≤ 𝑑 ≤ 105. 1 ≤ 𝑚 ≤ 400. 1 ≤ 𝑛 ≤ 300. 0 < stop1 < stop2 < · · · < stop𝑛 < 𝑑.
 
 
 
