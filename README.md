@@ -186,3 +186,71 @@ Output Format: Output the minimum distance.
 
 
 
+Money Change (Dynamic Programming)
+==================================
+The goal is to apply dynamic programming for solving the Money Change Problem for denominations 1, 3, and 4.
+Input Format: Integer money.
+Output Format: The minimum number of coins with denominations 1, 3, 4 that changes money.
+Constraints: 1 ≤ money ≤ 10^3.
+
+
+
+Primitive Calculator (Dynamic Programming)
+==========================================
+Given an integer 𝑛, compute the minimum number of operations needed to obtain the number 𝑛 starting from the number 1 by performing the following three operations with the current number 𝑥: multiply 𝑥 by 2, multiply 𝑥 by 3, or add 1 to 𝑥.
+Input Format: The input consists of a single integer 1 ≤ 𝑛 ≤ 10^6.
+Output Format: In the first line, output the minimum number 𝑘 of operations needed to get 𝑛 from 1. In the second line output a sequence of intermediate numbers. That is, the second line would contain positive integers 𝑎0, 𝑎2, . . . , 𝑎𝑘−1 such that 𝑎0 = 1, 𝑎𝑘−1 = 𝑛 and for all 0 ≤ 𝑖 < 𝑘 − 1, 𝑎𝑖+1 is equal to either 𝑎𝑖 + 1, 2𝑎𝑖, or 3𝑎𝑖.
+
+
+
+Edit Distance (Dynamic Programming)
+===================================
+The edit distance between two strings is the minimum number of operations (insertions, deletions, and substitutions of symbols) to transform one string into another. It is a measure of similarity of two strings. The goal is to implement the algorithm for computing the edit distance between two strings.
+Input Format: Each of the two lines of the input contains a string consisting of lower case latin letters.
+Constraints: The length of both strings is at least 1 and at most 100.
+Output Format: Output the edit distance between the given two strings.
+
+
+
+Longest Common Subsequence of Two Sequences (Dynamic Programming)
+=================================================================
+Given two sequences 𝐴 = (𝑎1, 𝑎2, . . . , 𝑎𝑛) and 𝐵 = (𝑏1, 𝑏2, . . . , 𝑏𝑚), finding the length of their longest common subsequence, i.e., the largest non-negative integer 𝑝 such that there exist indices 1 ≤ 𝑖1 < 𝑖2 < · · · < 𝑖𝑝 ≤ 𝑛 and 1 ≤ 𝑗1 < 𝑗2 < · · · < 𝑗𝑝 ≤ 𝑚, such that 𝑎𝑖1 = 𝑏𝑗1 , . . . , 𝑎𝑖𝑝 = 𝑏𝑗𝑝.
+Input Format: First line: 𝑛. Second line: 𝑎1, 𝑎2, . . . , 𝑎𝑛. Third line: 𝑚. Fourth line: 𝑏1, 𝑏2, . . . , 𝑏𝑚.
+Constraints: 1 ≤ 𝑛,𝑚 ≤ 100; −10^9 < 𝑎𝑖, 𝑏𝑖 < 10^9.
+Output Format: Output 𝑝.
+
+
+
+Longest Common Subsequence of Three Sequences (Dynamic Programming)
+===================================================================
+Given three sequences 𝐴 = (𝑎1, 𝑎2, . . . , 𝑎𝑛), 𝐵 = (𝑏1, 𝑏2, . . . , 𝑏𝑚), and 𝐶 = (𝑐1, 𝑐2, . . . , 𝑐𝑙), finding the length of their longest common subsequence, i.e., the largest non-negative integer 𝑝 such that there exist indices 1 ≤ 𝑖1 < 𝑖2 < · · · < 𝑖𝑝 ≤ 𝑛, 1 ≤ 𝑗1 < 𝑗2 < · · · < 𝑗𝑝 ≤ 𝑚, 1 ≤ 𝑘1 < 𝑘2 < · · · < 𝑘𝑝 ≤ 𝑙 such that 𝑎𝑖1 = 𝑏𝑗1 = 𝑐𝑘1 , . . . , 𝑎𝑖𝑝 = 𝑏𝑗𝑝 = 𝑐𝑘𝑝
+Input Format: First line: 𝑛. Second line: 𝑎1, 𝑎2, . . . , 𝑎𝑛. Third line: 𝑚. Fourth line: 𝑏1, 𝑏2, . . . , 𝑏𝑚. Fifth line: 𝑙. Sixth line: 𝑐1, 𝑐2, . . . , 𝑐𝑙.
+Constraints: 1 ≤ 𝑛, 𝑚, 𝑙 ≤ 100; −10^9 < 𝑎𝑖, 𝑏𝑖, 𝑐𝑖 < 10^9.
+Output Format: Output 𝑝.
+
+
+
+Knapsack without Repetitions (Dynamic Programming)
+==================================================
+Given 𝑛 items, find the maximum weight of items fits into a bag of capacity 𝑊.
+Input Format: The first line of the input contains the capacity 𝑊 of a knapsack and the number 𝑛 of items of similar value. The next line contains 𝑛 integers 𝑤0,𝑤1, . . . ,𝑤𝑛−1 defining the weights of the items.
+Constraints: 1 ≤ 𝑊 ≤ 10^4; 1 ≤ 𝑛 ≤ 300; 0 ≤ 𝑤0, . . . ,𝑤𝑛−1 ≤ 10^5.
+Output Format: Output the maximum weight of gold that fits into a knapsack of capacity 𝑊.
+
+
+Partitioning (Dynamic Programming)
+==================================
+The goal is to evenly split all the items with different values into three subsets with equal sums.
+Problem Description
+Input Format: The first line contains an integer 𝑛. The second line contains integers 𝑣1, 𝑣2, . . . , 𝑣𝑛 separated by spaces.
+Constraints: 1 ≤ 𝑛 ≤ 20, 1 ≤ 𝑣𝑖 ≤ 30 for all 𝑖.
+Output Format: Output 1, if it possible to partition 𝑣1, 𝑣2, . . . , 𝑣𝑛 into three subsets with equal sums, and 0 otherwise.
+
+
+
+Maximum Value of an Arithmetic Expression (Dynamic Programming)
+===============================================================
+Finding the maximum value of an arithmetic expression by specifying the order of applying its arithmetic operations using additional parentheses.
+Input Format: The only line of the input contains a string 𝑠 of length 2𝑛 + 1 for some 𝑛, with symbols 𝑠0, 𝑠1, . . . , 𝑠2𝑛. Each symbol at an even position of 𝑠 is a digit (that is, an integer from 0 to 9) while each symbol at an odd position is one of three operations from {+,-,*}.
+Constraints: 0 ≤ 𝑛 ≤ 1000.
+Output Format: Output the maximum possible value of the given arithmetic expression among different orders of applying arithmetic operations.
