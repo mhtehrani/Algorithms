@@ -7,18 +7,6 @@ July 23, 2021
 https://github.com/mhtehrani
 
 """
-# Uses python3
-# import random
-# import timeit
-
-def number_of_inversions_naive(a):
-    number_of_inversions = 0
-    for i in range(len(a)-1):
-        for j in range(i+1,len(a)):
-            if a[i] > a[j]:
-                number_of_inversions += 1
-    
-    return number_of_inversions
 
 def inversions3(a):
     left = 0
@@ -69,33 +57,3 @@ n = int(input())
 a = list(map(int, input().split()))
 a, n = inversions3(a)
 print(n)
-
-# # a = [0,1,2,3,4,5]
-# # a = [5,4,3,2,1,0]
-# a = [2, 7, 2, 3, 4]
-# print(number_of_inversions_naive(a))
-# a, n = inversions3(a)
-# print(n)
-
-# while True:
-#     a = []
-#     n = random.randint(10000,10000)
-#     for i in range(n):
-#         a.append(random.randint(1, 100))
-    
-#     a1 = timeit.default_timer()
-#     b = number_of_inversions_naive(a)
-#     a2 = timeit.default_timer()
-#     c_, c = inversions3(a)
-#     a3 = timeit.default_timer()
-    
-#     print(a2-a1)
-#     print(a3-a2)
-    
-#     if b != c:
-#         print(b)
-#         print(c)
-#         print(a)
-#         break
-    
-#     print("OK")
