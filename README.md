@@ -149,13 +149,40 @@ Output Format: Output 1 if the sequence contains an element that appears strictl
 
 
 
+3-Way Quick Sort Algorithm
+==========================
+The goal is to replace a 2-way partition with a 3-way partition in quick sort algorithm. That is, the new partition procedure should partition the array into three parts: < 𝑥 part, = 𝑥 part, and > 𝑥 part.
+Input Format: The first line of the input contains an integer 𝑛. The next line contains a sequence of 𝑛 integers 𝑎0, 𝑎1, . . . , 𝑎𝑛−1.
+Constraints: 1 ≤ 𝑛 ≤ 10^5; 1 ≤ 𝑎𝑖 ≤ 10^9 for all 0 ≤ 𝑖 < 𝑛.
+Output Format: Output this sequence sorted in non-decreasing order.
 
 
 
+Number of Inversions
+====================
+An inversion of a sequence 𝑎0, 𝑎1, . . . , 𝑎𝑛−1 is a pair of indices 0 ≤ 𝑖 < 𝑗 < 𝑛 such that 𝑎𝑖 > 𝑎𝑗 . For example, a sorted (in non-descending order) sequence contains no inversions at all, while in a sequence sorted in descending order any two elements constitute an inversion (for a total of 𝑛(𝑛 − 1)/2 inversions).
+The goal is to count the number of inversions of a given sequence.
+Input Format: The first line contains an integer 𝑛, the next one contains a sequence of integers 𝑎0, 𝑎1, . . . , 𝑎𝑛−1.
+Constraints: 1 ≤ 𝑛 ≤ 10^5, 1 ≤ 𝑎𝑖 ≤ 10^9 for all 0 ≤ 𝑖 < 𝑛.
+Output Format: Output the number of inversions in the sequence.
 
 
 
+Points and Segments
+===================
+Given a set of points on a line and a set of segments on a line, the goal is to compute, for each point, the number of segments that contain this point.
+Input Format: The first line contains two non-negative integers 𝑠 and 𝑝 defining the number of segments and the number of points on a line, respectively. The next 𝑠 lines contain two integers 𝑎𝑖, 𝑏𝑖 defining the 𝑖-th segment [𝑎𝑖, 𝑏𝑖]. The next line contains 𝑝 integers defining points 𝑥1, 𝑥2, . . . , 𝑥𝑝.
+Constraints: 1 ≤ 𝑠, 𝑝 ≤ 50000; −10^8 ≤ 𝑎𝑖 ≤ 𝑏𝑖 ≤ 10^8 for all 0 ≤ 𝑖 < 𝑠; −10^8 ≤ 𝑥𝑗 ≤ 10^8 for all 0 ≤ 𝑗 < 𝑝.
+Output Format: Output 𝑝 non-negative integers 𝑘0, 𝑘1, . . . , 𝑘𝑝−1 where 𝑘𝑖 is the number of segments which contain 𝑥𝑖. More formally, 𝑘𝑖 = |{𝑗 : 𝑎𝑗 ≤ 𝑥𝑖 ≤ 𝑏𝑗}|.
 
+
+
+Closet Points
+=============
+Given 𝑛 points on a plane, find the smallest distance between a pair of two (different) points.
+Input Format: The first line contains the number 𝑛 of points. Each of the following 𝑛 lines defines a point (𝑥𝑖, 𝑦𝑖).
+Constraints: 2 ≤ 𝑛 ≤ 10^5; −10^9 ≤ 𝑥𝑖, 𝑦𝑖 ≤ 10^9 are integers.
+Output Format: Output the minimum distance.
 
 
 
