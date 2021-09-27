@@ -10,6 +10,7 @@ https://github.com/mhtehrani
 
 import numpy
 
+
 def Edit_Distance(row, column):
     Dis = numpy.zeros([len(row)+1, len(column)+1])
     
