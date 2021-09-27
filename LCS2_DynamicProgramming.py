@@ -21,7 +21,7 @@ def LCS_fast(row, col):
     #end
     
     # Creating empty table of LCSs and initializing the 1st row and column with 0
-    # =========================================================================
+    # ===========================================================================
     LCSs = [None]*(len(row)+1)
     for i in range(len(row)+1):
         LCSs[i] = [0]*(len(col)+1)
