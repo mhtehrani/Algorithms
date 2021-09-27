@@ -24,13 +24,13 @@ def Optimal_Sequence(n):
             if i % 3 == 0:
                 if Value[int(i/3)]+1 < Value[i]:
                     Value[i] = Value[int(i/3)]+1
-            #end
+            
             if i % 2 == 0:
                 if Value[int(i/2)]+1 < Value[i]:
                     Value[i] = Value[int(i/2)]+1
-            #end
-        #end
-    #end
+            
+        
+    
     
     Sequence = [None]*(Value[n]+1)
     Sequence[-1] = n
@@ -39,26 +39,19 @@ def Optimal_Sequence(n):
     for j in range(Value[n]-1,0,-1):
         n_tem = Sequence[j+1]
         Sequence[j] = Sequence[j+1]-1
-        # if n_tem % 3 == 0:
-        #     if Value[int(n_tem/3)] == Value[Sequence[j+1]]-1:
-        #         Sequence[j] = int(n_tem/3)
-        #     #end
-        # #end
         
         if n_tem % 2 == 0:
             if Value[int(n_tem/2)] == Value[Sequence[j+1]]-1:
                 Sequence[j] = int(n_tem/2)
-            #end
-        #end
+            
+        
         
         if n_tem % 3 == 0:
             if Value[int(n_tem/3)] == Value[Sequence[j+1]]-1:
                 Sequence[j] = int(n_tem/3)
-            #end
-        #end
+            
+        
     return Value[n], Sequence
-
-
 
 
 n = int(input())
