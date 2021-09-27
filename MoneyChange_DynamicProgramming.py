@@ -18,8 +18,8 @@ def Change(n):
         Value[0:5] = initial
         for i in range(5,n+1):
             Value[i] = min(Value[i-1]+1,Value[i-3]+1,Value[i-4]+1)
-        #end
-    #end
+        
+    
     
     return Value[n]
 
